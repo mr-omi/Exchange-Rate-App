@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cyborg/bootstrap.min.css" integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2" crossorigin="anonymous">
+    <title>Exchange Rate</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><strong>HOME</strong></a>
+            <a class="navbar-tech" href="https://www.exchangerate-api.com/"><span style="font-size: 20px"><strong>Get ExchangeRate - API</strong></span></a>
+        </div>
+    </nav>
+    <div class="jumbotron" style="text-align:center">
+        <h2 style="margin-top:-50px">ExchangeRate App </h2>
+        <h3>Get Current ExchangeRate of your desired Currencies !!!</h3>
+        <h3><img src="{% static 'image/exchange.jpg' %}" style="width: 300px; height: 170px; margin-bottom:-50px;"><img src="{% static 'image/erate.jpeg' %}" style="width: 300px; height: 170px; margin-bottom:-50px;"></h3>
+    </div>
+    <div class="container">
+        <select class="form-control" id="currency1">
+            <option value="AFN">Afghanistan</option>
+            <option value="ANG">Netherlands </option>
+            <option value="AUD">Australia</option>
+            <option value="BDT">Bangladesh</option>
+            <option value="BRL">Brazil</option>
+            <option value="CAD">Canada</option>
+            <option value="CHF">Switzerland</option>
+            <option value="CNY">China</option>
+            <option value="EGP">Egypt</option>
+            <option value="GBP">United Kingdom</option>
+            <option value="ILS">Israel</option>
+            <option value="INR">India</option>
+            <option value="JPY">Japan</option>
+            <option value="LKR">	Sri Lanka</option>
+            <option value="PKR">Pakistan</option>
+            <option value="RUB">Russia</option>
+            <option value="SAR">Saudi Arabia</option>
+            <option value="SGD">Singapore</option>
+            <option value="USD" selected>United States</option>
+            <option value="ZWL">Zimbabwe</option>
+            <option value="HKD">Hong Kong</option>
+        </select>
+        <br>
+        <div class="form-group">
+            <input type="text" class="form-control" value="1" id="amount1">
+        </div>
+        <br><br>
+        <select class="form-control" id="currency2">
+            <option value="AFN">Afghanistan</option>
+            <option value="ANG">Netherlands </option>
+            <option value="AUD">Australia</option>
+            <option value="BDT">Bangladesh</option>
+            <option value="BRL">Brazil</option>
+            <option value="CAD">Canada</option>
+            <option value="CHF">Switzerland</option>
+            <option value="CNY">China</option>
+            <option value="EGP">Egypt</option>
+            <option value="GBP">United Kingdom</option>
+            <option value="ILS">Israel</option>
+            <option value="INR">India</option>
+            <option value="JPY">Japan</option>
+            <option value="LKR">	Sri Lanka</option>
+            <option value="PKR">Pakistan</option>
+            <option value="RUB">Russia</option>
+            <option value="SAR">Saudi Arabia</option>
+            <option value="SGD">Singapore</option>
+            <option value="USD" selected>United States</option>
+            <option value="ZWL">Zimbabwe</option>
+            <option value="HKD">Hong Kong</option>
+        </select>
+        <br>
+        <div class="form-group">
+            <input type="text" class="form-control" value="1" id="amount2">
+        </div>
+    </div>
+    <script src="{% static 'jsfile/sample.js' %}"></script>
+</body>
+</html>
