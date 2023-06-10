@@ -8,7 +8,7 @@ function calculate(){
     const c2 = curr2.value;
     const a1 = amt1.value;
     fetch(
-        `https://v6.exchangerate-api.com/v6/7a49e0c03f8ce84e04b6bf48/pair/${c1}/${c2}/${a1}`
+        `https://v6.exchangerate-api.com/v6/key/pair/${c1}/${c2}/${a1}`
     )
     .then((res) => res.json())
     .then((data) => {
